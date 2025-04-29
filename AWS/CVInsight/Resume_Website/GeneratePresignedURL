@@ -1,0 +1,41 @@
+#AWS Lamda - GeneratePresignedURL
+import json
+import boto3
+import os
+
+s3 = boto3.client('s3')
+
+def lambda_handler(event, context):
+    try:
+        # Get filename and filetype from frontend request
+        body = json.loads(event['body'])
+        filename = body['filename']
+        filetype = body['filetype']
+
+        bucket_name = 'lambda-resume'  # Replace with your actual S3 bucket
+        key = f"resumes/{filename}"
+
+        # Generate pre-signed URL
+        presigned_url = s3.generate_presigned_url(
+            'put_object',
+            Params={'Bucket': bucket_name, 'Key': key, 'ContentType': filetype},
+            ExpiresIn=3600
+        )
+
+        return {
+            'statusCode': 200,
+            'headers': {
+                "Access-Control-Allow-Origin": "*",  # Important for CORS
+                "Access-Control-Allow-Headers": "*"
+            },
+            'body': json.dumps({'url': presigned_url})
+        }
+
+    except Exception as e:
+        return {
+            'statusCode': 500,
+            'headers': {
+                "Access-Control-Allow-Origin": "*"
+            },
+            'body': json.dumps({'error': str(e)})
+        }
