@@ -1,0 +1,39 @@
+/* Make sure the body takes full screen */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Apply the background image to body */
+  body {
+    font-size: 30px;
+    background-image: url("background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+    color: black;
+    font-family: 'Segoe UI', sans-serif;
+    text-align: center;
+  }
+  
+  /* Style the link */
+  a {
+    color:green;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  a:hover {
+    color: blueviolet;
+  }
+  
+
+  
