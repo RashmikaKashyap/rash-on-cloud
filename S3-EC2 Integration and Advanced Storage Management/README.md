@@ -2,7 +2,8 @@
 
 **Author:** Rashmika Kashyap  
 **Technologies Used:** Amazon S3, Amazon EC2, IAM, Transfer Acceleration, CORS, Lifecycle Policies
-📄 [Download Project Report (PDF)](./S3-EC2 Integration and Advanced Storage Management.pdf)
+
+📄 [Download Project Report (PDF)](./S3-EC2_Integratio_and_Advanced_Storage_Management.pdf)
 
 ---
 
