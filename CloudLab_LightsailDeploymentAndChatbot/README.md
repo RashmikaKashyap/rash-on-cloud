@@ -3,7 +3,7 @@
 **Author:** Rashmika Kashyap  
 **Tech Stack:** AWS Lightsail, Amazon Lex, FileZilla, DNS, HTTPS  
 **Document:** `CloudLab_DeploymentAndChatbot_RashmikaKashyap.pdf`
-📄 [Download Project Report (PDF)](CloudLab_LightsailDeploymentAndChatbot/CloudLab_LightsailDeploymentAndChatbot_RashmikaKashyap.pdf)
+📄 [Download Project Report (PDF)](CloudLab_LightsailDeploymentAndChatbot_RashmikaKashyap.pdf)
 
 ---
 
