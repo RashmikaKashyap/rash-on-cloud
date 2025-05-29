@@ -1,6 +1,6 @@
 # ☁️ Cloud Lab: API Gateway Integration with Lambda & DynamoDB
 
-📄 [Download Project Report (PDF)](CLOUD LAB ASSIGNMENT 5 & 6.pdf)
+📄 [Download Project Report (PDF)](CLOUD%20LAB%20ASSIGNMENT%205%20%26%206.pdf)
 
 This lab enhances a REST API using Lambda integration and DynamoDB for dynamic city temperature data. The API is deployed with proper CORS configurations and tested via Postman and CloudFront.
 
