@@ -1,0 +1,31 @@
+<settings>
+<servers>
+  <server>
+    <id>rashmikakashyap-cloud-devops-cicd</id>
+    <username>aws</username>
+    <password>${env.CODEARTIFACT_AUTH_TOKEN}</password>
+  </server>
+</servers>
+<profiles>
+  <profile>
+    <id>rashmikakashyap-cloud-devops-cicd</id>
+    <activation>
+      <activeByDefault>true</activeByDefault>
+    </activation>
+    <repositories>
+      <repository>
+        <id>rashmikakashyap-cloud-devops-cicd</id>
+        <url>https://rashmikakashyap-081992233210.d.codeartifact.us-east-1.amazonaws.com/maven/cloud-devops-cicd/</url>
+      </repository>
+    </repositories>
+  </profile>
+</profiles>
+<mirrors>
+  <mirror>
+    <id>rashmikakashyap-cloud-devops-cicd</id>
+    <name>rashmikakashyap-cloud-devops-cicd</name>
+    <url>https://rashmikakashyap-081992233210.d.codeartifact.us-east-1.amazonaws.com/maven/cloud-devops-cicd/</url>
+    <mirrorOf>*</mirrorOf>
+  </mirror>
+</mirrors>
+</settings>
