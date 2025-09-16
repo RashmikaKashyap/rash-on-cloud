@@ -20,5 +20,7 @@ phases:
       - mvn package -s settings.xml
 artifacts:
   files:
-    - target/*.war
+    - target/my-awesome-app.war
+    - appspec.yml
+    - scripts/**/*
   discard-paths: no
